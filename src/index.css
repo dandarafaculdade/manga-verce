@@ -1,0 +1,126 @@
+
+:root {
+  --cor-fundo: #faf8f3;
+  --cor-texto: #171717;
+  --cor-destaque: #c62828;
+  --cor-branca: #ffffff;
+  --cor-borda: #171717;
+
+  --espacamento-pequeno: 8px;
+  --espacamento-medio: 16px;
+  --espacamento-grande: 32px;
+
+  --fonte-principal: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  font-family: var(--fonte-principal);
+}
+
+.cabecalho {
+  padding: var(--espacamento-medio);
+  border-bottom: 2px solid var(--cor-borda);
+  background-color: var(--cor-branca);
+}
+
+.cabecalho h1 {
+  margin: 0 0 12px;
+  color: var(--cor-destaque);
+  font-size: 28px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.cabecalho nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--espacamento-medio);
+}
+
+.cabecalho a {
+  color: var(--cor-texto);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.cabecalho a:hover {
+  color: var(--cor-destaque);
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--espacamento-medio);
+}
+
+.destaque {
+  padding: var(--espacamento-grande);
+  border: 2px solid var(--cor-borda);
+  background-color: var(--cor-branca);
+}
+
+.destaque h2 {
+  margin-top: 0;
+  font-size: 32px;
+}
+
+.destaque p {
+  line-height: 1.6;
+}
+
+.biblioteca,
+.personagens {
+  margin-top: 40px;
+}
+
+.biblioteca h2,
+.personagens h2 {
+  border-left: 5px solid var(--cor-destaque);
+  padding-left: 12px;
+  text-transform: uppercase;
+}
+
+.rodape {
+  margin-top: 48px;
+  padding: 24px;
+  background-color: var(--cor-texto);
+  color: var(--cor-branca);
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 32px;
+  }
+
+  .cabecalho h1 {
+    margin-bottom: 0;
+  }
+
+  main {
+    padding: 32px;
+  }
+
+  .destaque {
+    padding: 48px;
+  }
+
+  .destaque h2 {
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .destaque {
+    padding: 64px;
+  }
+
+  .destaque h2 {
+    font-size: 48px;
+  }
+}
