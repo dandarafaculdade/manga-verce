@@ -127,3 +127,37 @@
     grid-template-columns: repeat(4, 1fr);
   }
 }
+
+
+/* Botão de favoritos - Fase 3 */
+
+.botao-favorito {
+  margin-top: 12px;
+  padding: 10px 16px;
+  border: 2px solid #dc2626;
+  border-radius: 8px;
+  background-color: transparent;
+  color: #dc2626;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.botao-favorito:hover {
+  background-color: #fee2e2;
+}
+
+.botao-favorito.ativo {
+  background-color: #dc2626;
+  color: white;
+}
+
+.botao-favorito.ativo:hover {
+  background-color: #b91c1c;
+}
+
+.botao-favorito:focus-visible {
+  outline: 3px solid #f59e0b;
+  outline-offset: 3px;
+}
